@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import './App.css'
 import Header from './components/Header'
@@ -105,7 +105,7 @@ function App() {
   // console.log('data', data)
   return (
     <>
-      <BrowserRouter>
+      <HashRouter >
         <Header />
         <main className='mx-4'>
           <Routes>
@@ -117,7 +117,7 @@ function App() {
           </Routes>
         </main>
         {loading && <Modal closeModal={closeModal} deleteData={deleteData} handleDeleteSelected={handleDeleteSelected} deletedId={deletedId} />}
-      </BrowserRouter>
+      </HashRouter >
     </>
   )
 }

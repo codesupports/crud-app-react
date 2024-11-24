@@ -1,0 +1,65 @@
+body {
+    background-color: #f3f4f6;
+}
+
+.table-style {
+    border-collapse: collapse;
+    box-shadow: 0 0 10px #33333330;
+    background-color: #fff;
+}
+
+.table-style tr th {
+    padding: 10px 20px;
+    background-color: #1f2937;
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+.table-style tr td {
+    padding: 10px 20px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.details-btn {
+    background-color: rgb(78, 78, 78);
+}
+
+.edit-btn {
+    background-color: #bc7a01;
+}
+
+.delete-btn {
+    background-color: #9A0909;
+}
+
+.add-btn {
+    background-color: #283649;
+}
+
+.ok-btn {
+    background-color: #1fc45b;
+}
+
+.shadow-c {
+    box-shadow: 0 0 10px #33333330;
+}
+
+@media (max-width:767px) {
+
+    .table-style tr th,
+    .table-style tr td {
+        padding: 5px;
+        font-size: 13px;
+    }
+    .table-style .btn{
+        padding: 4px 6px;
+    }
+}

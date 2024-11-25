@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Modal = ({ closeModal, deleteData, handleDeleteSelected, deletedId }) => {
-    console.log('dddd', deletedId)
+
     return (
         <div id="modal" className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
             <div className="bg-white rounded-lg w-3/4 xl:w-1/4 md:w-1/3 p-6 shadow-lg ">

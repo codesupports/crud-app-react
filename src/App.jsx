@@ -110,7 +110,7 @@ function App() {
         <main className='mx-4'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/student" element={<Student data={data} handleDelete={handleDelete} handleEdit={handleEdit} handleDetails={handleDetails} x />} />
+            <Route path="/student" element={<Student data={data} handleDelete={handleDelete} handleEdit={handleEdit} handleDetails={handleDetails} />} />
             <Route path="/add" element={<Add handleAdd={handleAdd} />} />
             <Route path="/edit" element={<Edit editData={editData} handleUpdate={handleUpdate} isEditItem={editItem} />} />
             <Route path="/details" element={<Details deleteData={deleteData} handleDeleteSelected={handleDeleteSelected} />} />

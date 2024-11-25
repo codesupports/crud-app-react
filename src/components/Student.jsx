@@ -11,16 +11,20 @@ const Student = ({ data, handleDelete, handleEdit, handleDetails }) => {
             return item.name.toLowerCase().includes(elem.toLowerCase()) || item.age.toString().includes(elem)
         })
         setMainData(filteredData)
-        // setMainData((prevItems) => prevItems.filter(item => item.name.toLowerCase().includes(elem.toLowerCase()) || item.age.toString().includes(elem)))
     }
+
     useEffect(() => {
-        // setMainData(data)
-    }, [handelSearch])
-    console.log("mainData", mainData, "data", data)
+        setMainData(data)
+    }, [data])
     return (
         <section className=" justify-center py-5">
             <div className="text-center w-1/2 m-auto">
-                <input type="text" name="" id="" placeholder="Search by Name and Age..." className="border rounded border-e-gray-500 px-2 py-1 w-8/12" onChange={(e) => handelSearch(e.target.value)} />
+                <input
+                    type="text"
+                    placeholder="Search by Name and Age..."
+                    className="border rounded border-e-gray-500 px-2 py-1 w-8/12"
+                    onChange={(e) => handelSearch(e.target.value)}
+                />
             </div>
             <div className="text-center py-5 overflow-auto">
                 <table className="table-style m-auto xl:w-1/2 w-full">
